@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Mahasthangarh",
+    "location": "Bogura",
+    "category": "Ancient Heritage",
+    "description": "The oldest city in Bangladesh, offering a glimpse into the Pundravardhana Kingdom.",
+    "image": "https://i.ibb.co.com/C5ZjWzkB/images-3.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Sajek Valley",
+    "location": "Rangamati",
+    "category": "Hill Station",
+    "description": "Experience the 'Queen of Hills' where you can touch the clouds from your cottage window.",
+    "image": "https://i.ibb.co.com/FLpRhHSz/sajek.jpg",
+    "rating": 4.9
+  },
+  {
+    "id": 3,
+    "name": "Cox's Bazar",
+    "location": "Chittagong",
+    "category": "Beach",
+    "description": "Relax on the world's longest natural sandy sea beach spanning 120km.",
+    "image": "https://i.ibb.co.com/svNVxmKG/photo-1587302525159-2363f54affd4.avif",
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Sundarbans",
+    "location": "Khulna",
+    "category": "Wildlife",
+    "description": "The world's largest mangrove forest and the majestic home of the Royal Bengal Tiger.",
+    "image": "https://i.ibb.co.com/YBcchb7h/Sundarban-Tiger.jpg",
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "name": "Saint Martin's Island",
+    "location": "Cox's Bazar",
+    "category": "Island",
+    "description": "A small coral island in the northeast of the Bay of Bengal with crystal clear water.",
+    "image": "https://i.ibb.co.com/cSkcxB0g/Saint-Martins-Island-with-boats-in-foreground.jpg",
+    "rating": 5.0
+  },
+  {
+    "id": 6,
+    "name": "Somapura Mahavihara",
+    "location": "Naogaon",
+    "category": "UNESCO World Heritage",
+    "description": "One of the most important archaeological sites in South Asia, dating back to the 8th century.",
+    "image": "https://i.ibb.co.com/zW2TQCxx/images-4.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": 7,
+    "name": "Sylhet Tea Gardens",
+    "location": "Sylhet",
+    "category": "Nature",
+    "description": "Endless rolling hills covered in lush green tea plants, perfect for serene walks.",
+    "image": "https://images.unsplash.com/photo-1594665330341-3837489566e9?auto=format&fit=crop&w=1200&q=80",
+    "rating": 4.6
+  },
+  {
+    "id": 8,
+    "name": "Ahsan Manzil",
+    "location": "Dhaka",
+    "category": "Architecture",
+    "description": "The iconic Pink Palace on the banks of the Buriganga River, reflecting the Nawab era.",
+    "image": "https://i.ibb.co.com/yFvTXTQ3/Ahsan-Manzil-Museum-Admission-Ticketin-Dhaka.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 9,
+    "name": "Jaflong",
+    "location": "Sylhet",
+    "category": "Riverside",
+    "description": "Known for its stone collections and clear mountain streams flowing from the Meghalaya hills.",
+    "image": "https://i.ibb.co.com/YFkKRMzQ/jaflong.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 10,
+    "name": "Rangamati Hanging Bridge",
+    "location": "Rangamati",
+    "category": "Adventure",
+    "description": "A colorful bridge over the Kaptai Lake, surrounded by hills and tribal culture.",
+    "image": "https://i.ibb.co.com/GwrKrKB/hanging-bride-one-of.jpg",
+    "rating": 4.4
+  },
+  {
+    "id": 11,
+    "name": "Bichanakandi",
+    "location": "Sylhet",
+    "category": "Nature",
+    "description": "Where many layers of the Khasi mountain meet at a single point, creating a stone bed river.",
+    "image": "https://i.ibb.co.com/YFkKRMzQ/jaflong.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 12,
+    "name": "Sixty Dome Mosque",
+    "location": "Bagerhat",
+    "category": "Religious Heritage",
+    "description": "A massive 15th-century mosque with 77 domes, a masterpiece of Tughlaq architecture.",
+    "image": "https://i.ibb.co.com/8L8DrMpt/images-5.jpg",
+    "rating": 4.9
+  },
+  {
+    "id": 13,
+    "name": "Ratargul Swamp Forest",
+    "location": "Sylhet",
+    "category": "Wildlife",
+    "description": "The only freshwater swamp forest in Bangladesh, best explored via wooden boats.",
+    "image": "https://i.ibb.co.com/M56xYp3z/unnamed.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": 14,
+    "name": "Lalbagh Fort",
+    "location": "Dhaka",
+    "category": "Mughal Heritage",
+    "description": "An incomplete 17th-century Mughal fort complex that stands as a symbol of Old Dhaka.",
+    "image": "https://i.ibb.co.com/bjRYd7Jr/photo-1662563013196-f71e724704aa.avif",
+    "rating": 4.6
+  },
+  {
+    "id": 15,
+    "name": "Nilgiri",
+    "location": "Bandarban",
+    "category": "Hill Tracks",
+    "description": "One of the highest peaks in Bangladesh, managed by the Army, offering majestic sunrise views.",
+    "image": "https://i.ibb.co.com/bgZtwcXy/Bandarban.jpg",
+    "rating": 4.9
+  },
+  {
+    "id": 16,
+    "name": "Kuakata",
+    "location": "Patuakhali",
+    "category": "Beach",
+    "description": "Commonly known as the 'Daughter of the Ocean', where you can see both sunrise and sunset.",
+    "image": "https://i.ibb.co.com/7Js6f9zH/kuakata-patuakhai-jpg.webp",
+    "rating": 4.5
+  },
+  {
+    "id": 17,
+    "name": "Panam City",
+    "location": "Sonargaon",
+    "category": "Ghost City",
+    "description": "An abandoned historic city from the 19th century with beautifully carved colonial buildings.",
+    "image": "https://i.ibb.co.com/VWzpvzRY/e56uyu5oox4ydmrpw1cf.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 18,
+    "name": "Tanguar Haor",
+    "location": "Sunamganj",
+    "category": "Wetlands",
+    "description": "A unique ecosystem and RAMSAR site, famous for its blue water and migratory birds.",
+    "image": "https://i.ibb.co.com/Ps5XxZsP/01-KG2067-MYWP80-FSG6-MHEDYBRQ.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": 19,
+    "name": "Nafakhum",
+    "location": "Bandarban",
+    "category": "Waterfall",
+    "description": "Known as the Niagara of Bangladesh, a powerful waterfall hidden deep in the hills.",
+    "image": "https://i.ibb.co.com/0WWBrpW/1740373837.webp",
+    "rating": 4.9
+  },
+  {
+    "id": 20,
+    "name": "Mainamati",
+    "location": "Cumilla",
+    "category": "Buddhist Heritage",
+    "description": "An ancient seat of Buddhist learning with over 50 archaeological sites and museums.",
+    "image": "https://i.ibb.co.com/21qy5G9G/images-6.jpg",
+    "rating": 4.6
+  }
+]
