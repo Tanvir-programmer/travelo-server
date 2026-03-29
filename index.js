@@ -6,12 +6,9 @@ const cors = require("cors");
 const app = express();
 const port = 4000;
 
-// Middleware
 app.use(cors());
 app.use(express.json());
 
-// 1. DATABASE CONNECTION
-// Ensure your .env has /travelo before the ?
 const mongoURI = process.env.MONGO_URI;
 
 mongoose
@@ -19,8 +16,8 @@ mongoose
   .then(() => console.log("✅ Successfully connected to 'travelo' database"))
   .catch((err) => console.error("❌ Connection error:", err));
 
-// 2. DATA MODELS
-// Destination Schema (Matches your 20 items)
+// --- SCHEMAS & MODELS ---
+
 const DestinationSchema = new mongoose.Schema({
   id: Number,
   name: String,
@@ -30,15 +27,27 @@ const DestinationSchema = new mongoose.Schema({
   image: String,
   rating: Number,
 });
-
-// The 3rd argument "destinations" forces Mongoose to use your exact collection
 const Destination = mongoose.model(
   "Destination",
   DestinationSchema,
   "destinations",
 );
 
-// Contact Schema (For your form)
+// ✅ Added Package Schema to support your package data
+const PackageSchema = new mongoose.Schema({
+  id: Number,
+  package_name: String,
+  destination: String,
+  duration: String,
+  price_bdt: Number,
+  category: String,
+  activities: [String],
+  inclusions: [String],
+  rating: Number,
+  operator: String,
+});
+const Package = mongoose.model("Package", PackageSchema, "packages");
+
 const ContactSchema = new mongoose.Schema({
   fullName: String,
   email: String,
@@ -49,24 +58,37 @@ const ContactSchema = new mongoose.Schema({
 });
 const Contact = mongoose.model("Contact", ContactSchema, "contacts");
 
-// 3. ROUTES
+// --- ROUTES ---
 
-// GET all 20 destinations
+// GET all destinations
 app.get("/api/destinations", async (req, res) => {
   try {
     const data = await Destination.find({});
-    res.status(200).json({
-      success: true,
-      count: data.length,
-      data: data,
-    });
+    res.status(200).json({ success: true, count: data.length, data });
   } catch (error) {
     res.status(500).json({ success: false, error: error.message });
   }
 });
+
+// GET single destination by ID
 app.get("/api/destinations/:id", async (req, res) => {
   try {
-    const data = await Destination.findOne({});
+    // ✅ FIXED: Using req.params.id to find the specific item
+    const data = await Destination.findOne({ id: req.params.id });
+    if (!data)
+      return res.status(404).json({ success: false, message: "Not found" });
+
+    res.status(200).json({ success: true, data });
+  } catch (error) {
+    res.status(500).json({ success: false, error: error.message });
+  }
+});
+
+// GET all Travel Packages
+// ✅ FIXED: Added missing "/" and changed "packages" to "Package" model
+app.get("/api/packages", async (req, res) => {
+  try {
+    const data = await Package.find({});
     res.status(200).json({
       success: true,
       count: data.length,
@@ -77,7 +99,6 @@ app.get("/api/destinations/:id", async (req, res) => {
   }
 });
 
-// POST a new contact message
 app.post("/api/contact", async (req, res) => {
   try {
     const newMessage = new Contact(req.body);
